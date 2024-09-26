@@ -7,7 +7,6 @@ gem "rails", "~> 7.1.4"
 
 # ******bootstrap************
 gem 'bootstrap', '~> 5.1.3'
-gem 'sassc-rails'
 
 # Faker
 gem 'faker', '~> 3.4', '>= 3.4.2'
