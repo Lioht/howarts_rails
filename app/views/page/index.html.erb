@@ -1,10 +1,10 @@
 <h1 class="text-center">Personajes de Harry Potter</h1>
 <ul class="list-group mt-4">
   <% @characters.each do |character| %>
-    <li class="list-group-item character-item">
+    <li class="list-group-item character-item <%= character.house.downcase %>">
       <strong>Nombre:</strong> <%= character.name %> |
       <strong>Ubicación:</strong> <%= character.location %> |
-      <strong>Casa:</strong> <%= content_tag(:span, character.house, class: "badge badge-house") %>
+      <strong>Casa:</strong> <%= content_tag(:span, character.house, class: "badge badge-house #{character.house.downcase}") %>
     </li>
   <% end %>
 </ul>

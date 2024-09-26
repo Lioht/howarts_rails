@@ -15,7 +15,7 @@
  */
 
  body {
-    background-color: #f8f9fa; /* Fondo claro para simular el ambiente de Hogwarts */
+    background-color: #000306; /* Fondo claro para simular el ambiente de Hogwarts */
     font-family: 'Garamond', serif; /* Fuente elegante, similar a la de los libros */
   }
   
@@ -32,8 +32,8 @@
   }
   
   .character-item {
-    background-color: #fff; /* Fondo blanco para las tarjetas de personajes */
-    border: 2px solid #8A1B1B; /* Borde en color de Gryffindor */
+    background-color: #a88cb2; /* Fondo blanco para las tarjetas de personajes */
+    border: 2px solid #8A1B1B; /* Borde en color de Gryffindor por defecto */
     border-radius: 5px;
     margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
     padding: 10px; /* Espaciado interno */
@@ -45,9 +45,42 @@
     transform: scale(1.02); /* Ligera ampliación al pasar el ratón */
   }
   
+  /* Estilos por casa */
+  .gryffindor {
+    border-color: #A50034; /* Rojo Gryffindor */
+  }
+  
+  .hufflepuff {
+    border-color: #D6AA3D; /* Amarillo Hufflepuff */
+  }
+  
+  .ravenclaw {
+    border-color: #003D5B; /* Azul Ravenclaw */
+  }
+  
+  .slytherin {
+    border-color: #3A7D4D; /* Verde Slytherin */
+  }
+  
   .badge-house {
-    background-color: #8A1B1B; /* Color de fondo para la casa */
     color: #fff; /* Color del texto */
     font-weight: bold;
     margin-left: 5px; /* Espacio entre la casa y el resto del texto */
+  }
+  
+  /* Colores de casa para las insignias */
+  .badge-house.gryffindor {
+    background-color: #A50034; /* Rojo Gryffindor */
+  }
+  
+  .badge-house.hufflepuff {
+    background-color: #D6AA3D; /* Amarillo Hufflepuff */
+  }
+  
+  .badge-house.ravenclaw {
+    background-color: #003D5B; /* Azul Ravenclaw */
+  }
+  
+  .badge-house.slytherin {
+    background-color: #3A7D4D; /* Verde Slytherin */
   }
