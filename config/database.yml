@@ -25,7 +25,7 @@ development:
   username: postgres
   password: Clases#2024!
   port: 5432
-  
+
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
@@ -85,7 +85,7 @@ test:
 #
 production:
   <<: *default
-  #database: howarts_rails_production
-  #username: howarts_rails
-  #password: <%= ENV["HOWARTS_RAILS_DATABASE_PASSWORD"] %>
-  url: <%= ENV["DATABASE_URL"] %>
+  database: howarts_rails_production
+  username: howarts_rails
+  password: <%= ENV["HOWARTS_RAILS_DATABASE_PASSWORD"] %>
+  #url: <%= ENV["DATABASE_URL"] %>
